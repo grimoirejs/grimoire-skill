@@ -12,5 +12,9 @@
     "camelcase": [2, {"properties": "always"}],
     // Don't use var
     "no-var": [2]
+  },
+  "ecmaFeatures": {
+    "classes": true,
+    "blockBindings": true
   }
 }
