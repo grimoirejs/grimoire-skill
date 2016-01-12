@@ -3,6 +3,8 @@
 [![Linux Build][travis-image]][travis-url]
 [![Coverage Status][coveralls-image]][coveralls-url]
 [![Dependencies Status][david-dm-image]][david-dm-url]
+[![Code Climate GPA][code-climate-gpa-image]][code-climate-gpa-url]
+[![Code Climate Issue Count][code-climate-issue-count-image]][code-climate-issue-count-url]
 
 **NB: This library is still under active development, and is not meant to be used quite yet. Hang tight!**
 
@@ -11,4 +13,8 @@
 [coveralls-image]: https://coveralls.io/repos/grimoirejs/grimoire-skill/badge.svg?branch=master&service=github
 [coveralls-url]: https://coveralls.io/github/grimoirejs/grimoire-skill?branch=master
 [david-dm-image]: https://david-dm.org/grimoirejs/grimoire-skill.svg
-[david-dm-url]: 
+[david-dm-url]: https://david-dm.org/grimoirejs/grimoire-skill
+[code-climate-gpa-image]: https://codeclimate.com/github/grimoirejs/grimoire-skill/badges/gpa.svg
+[code-climate-gpa-url]: https://codeclimate.com/github/grimoirejs/grimoire-skill
+[code-climate-issue-count-image]: https://codeclimate.com/github/grimoirejs/grimoire-skill/badges/issue_count.svg
+[code-climate-issue-count-url]: https://codeclimate.com/github/grimoirejs/grimoire-skill
