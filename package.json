@@ -1,0 +1,17 @@
+{
+  "name": "grimoire-skill",
+  "version": "1.0.0",
+  "description": "Grimoire is a framework for working with Amazon Alexa. This library helps you build new Alexa skills.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "amazon alexa",
+    "alexa",
+    "alexa skills kit",
+    "alexa skills"
+  ],
+  "author": "Matt Buck",
+  "license": "MIT"
+}
