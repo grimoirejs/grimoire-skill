@@ -3,3 +3,6 @@ node_js:
   - "5.4"
 script: "npm run-script test-ci"
 after_script: "npm install coveralls@2.10.0 && cat ./coverage/lcov.info | coveralls"
+notifications:
+  flowdock:
+    secure: "KOdCS4+3kulvY+4CUmDkFlB80Mt03dFtPHy4fs3ZeLqU2KqhteO2n1DOgPPxE9QxViYh/pDgRKvOCHk3PD/0LEQJnEDX1tYtf8yXa0MFInXf8iayig3qBytFr93s7EO+mMINbQtPQg304I9dxmY+BAw2R8lnpfaV2awHJ9KtXx19QSrw3ymeGKiLOLUF9z0pbY+GUnlRpBaaMoNmR2HCOZJHGMYfFBIejt/W6+9zhwQtMpORHB55uMgPiVoGZ2CGu8kNlBOtZFfOnIbLIq1/rIXF0eIpu5ciP92P8ZmlPUyL4Y66F5lAbG6wjYAIUxCpOdYpQx8leQQxbr9+xqIaQkBP1jeLNMxURcOZDhbzn/qN1h/XCh9HYaVI/iNF+MorXnc5uJPfe/YPbpO6Tyhbcl0rvqEH3fMI/Pb/uWIiU9TBs1lZIr58CyangzNVnRq3L+O9T31A5x9HN1aXmlprykfiF8Dy9LmjL3/4fkfis0weq4PB8QnWvbtHQaMuz5KrpQzybR+BD/J80hUxSx+EqB0g6pSvS0kq5NRIZYGiFLkd1j2ULQwhUGMTQMEgyQxZQLuldKINXZdHHjLwvWPSE7AB2a+hZo6y5eTGcRO1WBFIGp8wys3SY+9k1GJG37MBNCYuxKxy9xGIMvZT25bae14PJ72mgrLMMs9MmzuQRMs="
