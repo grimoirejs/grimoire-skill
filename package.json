@@ -4,7 +4,9 @@
   "description": "Grimoire is a framework for working with Amazon Alexa. This library helps you build new Alexa skills.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter spec --bail --check-leaks test/"
+    "test": "mocha --reporter spec --bail --check-leaks test/",
+    "test-ci": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/"
   },
   "keywords": [
     "amazon alexa",
@@ -14,8 +16,10 @@
   ],
   "author": "Matt Buck",
   "license": "MIT",
+  "repository": "git@github.com:grimoirejs/grimoire-skill.git",
   "devDependencies": {
     "chai": "^3.4.1",
+    "istanbul": "^0.4.2",
     "mocha": "^2.3.4"
   }
 }
