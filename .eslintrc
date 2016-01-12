@@ -9,6 +9,8 @@
     // Exactly one declarator per declaration per function (var) or block (let or const)
     "one-var": [2, "never"],
     // camelCased names
-    "camelcase": [2, {"properties": "always"}]
+    "camelcase": [2, {"properties": "always"}],
+    // Don't use var
+    "no-var": [2]
   }
 }
