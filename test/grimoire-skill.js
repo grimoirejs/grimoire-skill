@@ -13,6 +13,7 @@ let expect = require( 'chai' ).expect;
 let Skill = require( '../' );
 
 describe( 'Skill', function() {
+
   describe( 'constructor', function() {
     it( 'sets the name to the value of the first argument', function() {
       let skillName = 'sample';
@@ -21,4 +22,5 @@ describe( 'Skill', function() {
       expect( subject.name ).to.equal( skillName );
     } );
   } );
+
 } );
