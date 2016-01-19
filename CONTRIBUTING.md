@@ -16,8 +16,8 @@ This project uses [idiomatic.js](https://github.com/rwaldron/idiomatic.js/) as i
 }
 ```
 * **Variables**
-  * One `var` per declaration.
   * Only use `let` or `const` for variable declarations.
+  * Split declarations into multiple statements.
 
 ## Hinting
 
