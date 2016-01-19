@@ -11,7 +11,13 @@
     // camelCased names
     "camelcase": [2, {"properties": "always"}],
     // Don't use var
-    "no-var": [2]
+    "no-var": [2],
+    // Require documentation
+    "valid-jsdoc": [2, {
+      "prefer": {
+        "return": "returns"
+      }
+    }]
   },
   "ecmaFeatures": {
     "classes": true,
