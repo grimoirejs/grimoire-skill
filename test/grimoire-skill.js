@@ -27,7 +27,7 @@ describe( 'grimoire', function() {
 
     it( 'gets and sets the value of the invocation name', function() {
       subject.invocationName = skillName;
-      expect(subject.invocationName).to.equal( skillName );
+      expect( subject.invocationName ).to.equal( skillName );
     } );
   } );
 
@@ -37,7 +37,7 @@ describe( 'grimoire', function() {
 
     it( 'gets and sets the value of the invocation name', function() {
       subject.name = skillName;
-      expect(subject.name).to.equal( skillName );
+      expect( subject.name ).to.equal( skillName );
     } );
   } );
 } );
