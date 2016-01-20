@@ -25,3 +25,4 @@ This module is heavily documented. The code is written in a [literate style](htt
 
 * [API documentation](http://grimoirejs.github.io/grimoire-skill/)
 * [Annotated source](http://grimoirejs.github.io/grimoire-skill/source)
+
