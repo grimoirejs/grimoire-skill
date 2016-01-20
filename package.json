@@ -28,6 +28,7 @@
     "mocha": "^2.3.4",
     "documentation": "^3.0.4",
     "docco": "^0.7.0",
-    "gh-pages": "^0.8.0"
+    "gh-pages": "^0.8.0",
+    "eslint": "git@github.com:eslint/eslint.git"
   }
 }
