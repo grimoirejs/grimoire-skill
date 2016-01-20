@@ -7,20 +7,37 @@
 
 'use strict';
 
-/*eslint-env node, mocha*/
-
 let expect = require( 'chai' ).expect;
-let Skill = require( '../' );
+let grimoire = require( '../' );
 
-describe( 'Skill', function() {
+describe( 'grimoire', function() {
 
   describe( 'constructor', function() {
-    it( 'sets the name to the value of the first argument', function() {
-      let skillName = 'sample';
-      let subject = new Skill( skillName );
+    let skillName = 'sample';
+    let subject = grimoire( skillName );
 
-      expect( subject.name ).to.equal( skillName );
+    it( 'sets the invocation name to the value of the first argument', function() {
+      expect( subject.invocationName ).to.equal( skillName );
     } );
   } );
 
+  describe( '#invocationName', function() {
+    let skillName = 'sample';
+    let subject = grimoire();
+
+    it( 'gets and sets the value of the invocation name', function() {
+      subject.invocationName = skillName;
+      expect(subject.invocationName).to.equal( skillName );
+    } );
+  } );
+
+  describe( '#name', function() {
+    let skillName = 'sample';
+    let subject = grimoire();
+
+    it( 'gets and sets the value of the invocation name', function() {
+      subject.name = skillName;
+      expect(subject.name).to.equal( skillName );
+    } );
+  } );
 } );
