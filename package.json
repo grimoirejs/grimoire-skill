@@ -4,6 +4,11 @@
   "description": "Grimoire is a framework for working with Amazon Alexa. This library helps you build new Alexa skills.",
   "main": "index.js",
   "scripts": {
+    "doc": "npm run doc-api && npm run doc-source",
+    "doc-api": "documentation -g -o doc/ -f html index.js",
+    "doc-source": "docco -o ./doc/source *.js lib/*.js",
+    "doc-ghpages": "scripts/doc-ghpages.js",
+    "publish-docs": "npm run doc && npm run doc-ghpages",
     "test": "mocha --reporter spec --bail --check-leaks test/",
     "test-ci": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/",
     "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/"
@@ -20,6 +25,9 @@
   "devDependencies": {
     "chai": "^3.4.1",
     "istanbul": "^0.4.2",
-    "mocha": "^2.3.4"
+    "mocha": "^2.3.4",
+    "documentation": "^3.0.4",
+    "docco": "^0.7.0",
+    "gh-pages": "^0.8.0"
   }
 }

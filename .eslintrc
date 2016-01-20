@@ -6,12 +6,18 @@
   // Allow for aligning property name values
   "rules": {
     "key-spacing": [2, { "align": "value" }],
-    // Exactly one declarator per declaration per function (var) or block (let or const)
+    // Split let and const declarations into multiple statements.
     "one-var": [2, "never"],
     // camelCased names
     "camelcase": [2, {"properties": "always"}],
     // Don't use var
-    "no-var": [2]
+    "no-var": [2],
+    // Require documentation
+    "valid-jsdoc": [2, {
+      "prefer": {
+        "return": "returns"
+      }
+    }]
   },
   "ecmaFeatures": {
     "classes": true,
